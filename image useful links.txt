@@ -1,0 +1,2 @@
+https://la.mathworks.com/matlabcentral/answers/340442-optical-music-recognition-basics
+https://www.geeksforgeeks.org/morphological-operations-in-matlab/
