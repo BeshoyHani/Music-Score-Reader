@@ -2,34 +2,25 @@ img = imread('TwinkleTwinkleLittleStar.bmp');
 img = imcomplement(img);
 
 %Extracting Stafflines 
-dilation_SE = strel('line', 10, 0);
+dilation_SE = strel('line', , 0);
 dilated_img = imopen(img, dilation_SE);
 %figure, imshow(dilated_img);
 
 %Subtract Stafflines from image
 img2 = img - dilated_img;
-%figure, imshow(img2);
+figure, imshow(img2);
 
 %Extracting Stafflines
 eroded_SE = strel('line', 2, 90);
-img2 = imopen(img2, eroded_SE);
-eroded_SE = strel('line', 4, 90);
+%img2 = imopen(img2, eroded_SE); %changed
 img2 = imclose(img2, eroded_SE);
-%img2 = imfill(img2);
+%im = max(img2, [], 3);
+%img2 = imfill(im>90,'holes');
+img2 = imfill(img2);
 figure, imshow(img2);
 img2 = rgb2gray(img2);
-img2 = imbinarize(img2,0.01);
-[a, b] = bwlabel(img2);
-vislabels(a);
-%level = graythresh(img2);
-%BW = imbinarize(rgb2gray(img2), level);
-%figure, imshow(BW);
-
-% figure, imshow(img2);
-% img2 = rgb2gray(img2);
-
-
-
+img2 = imbinarize(img2);
+[a b] = bwlabel(img2);
 
 %Shapeining image using laplacial filter
 % Laplacian=[-1 -1 -1; -1 9 -1; -1 -1 -1];
