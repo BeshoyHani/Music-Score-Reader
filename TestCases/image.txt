@@ -1,0 +1,17 @@
+https://la.mathworks.com/matlabcentral/answers/340442-optical-music-recognition-basics
+https://www.geeksforgeeks.org/morphological-operations-in-matlab/
+
+
+*Automated Instructional Aid for Reading Sheet Music*
+https://stacks.stanford.edu/file/druid:yj296hj2790/Khan_Ng_Mobile_Sheet_Music_Player.pdf
+
+*How To Read Sheet Music: Step-by-Step Instructions*
+https://musicnotes.com/now/tips/how-to-read-sheet-music/
+
+*
+	Optical Music Recognition Application
+		Grady Low
+	      Yung-Ho Chang
+*
+http://www.winlab.rutgers.edu/~crose/capstone12/entries/OpticalMusicRecognition.pdf
+
